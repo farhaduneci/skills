@@ -4,11 +4,11 @@ My personal Claude Code skills.
 
 ## Setup
 
-Each skill directory is symlinked into `~/.claude/skills/` so edits here take effect immediately:
-
 ```sh
-ln -s "$(pwd)/<skill>" ~/.claude/skills/<skill>
+./install.sh
 ```
+
+Symlinks each skill directory into `~/.claude/skills/` so edits here take effect immediately.
 
 ## Skills
 
