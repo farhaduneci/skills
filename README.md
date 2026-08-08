@@ -1,6 +1,7 @@
-# Skills
+# claude
 
-My personal Claude Code skills.
+My personal Claude Code setup: skills, hooks, and whatever else I end up
+wiring in.
 
 ## Setup
 
@@ -8,8 +9,13 @@ My personal Claude Code skills.
 ./install.sh
 ```
 
-Symlinks each skill directory into `~/.claude/skills/`.
+Runs every skill's own installer, symlinking each into `~/.claude/skills/`.
+Hooks aren't installed by this script — see each hook's own README.
 
-## Reference
+## Skills
 
-- [memo](./memo) — manage `~/.claude/memory/`: recall relevant memory, persist new facts, initialize a project's memory file, or reorganize the memory tree.
+- [memo](./skills/memo) — manage `~/.claude/memory/`: recall relevant memory, persist new facts, initialize a project's memory file, or reorganize the memory tree.
+
+## Hooks
+
+- [prevent-sleep](./hooks/prevent-sleep) — keep the Mac awake on AC power while Claude Code is actively working.
