@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Symlinks each skill in this repo into ~/.claude/skills/ so edits here take effect immediately.
+# Symlinks each skill in this repo into ~/.claude/skills/.
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

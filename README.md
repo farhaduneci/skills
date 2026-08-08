@@ -8,7 +8,7 @@ My personal Claude Code skills.
 ./install.sh
 ```
 
-Symlinks each skill directory into `~/.claude/skills/` so edits here take effect immediately.
+Symlinks each skill directory into `~/.claude/skills/`.
 
 ## Skills
 
