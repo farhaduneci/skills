@@ -1,7 +1,8 @@
 # reorganize [scope]
 
-Default scope = global memory only: `memory.md`, `general.md`, `domain/`, `tools/`. Project
-`MEMORY.md` files are excluded unless explicitly scoped, e.g. `/memo reorganize projects/linkedin`.
+Default scope = global only: `memory.md`, `general.md`, `domain/`. Project scopes are
+excluded unless explicitly named, e.g. `/memo reorganize projects/linkedin`, which includes
+that project's `memory.md`, `general.md`, `domain/` instead.
 
 1. Read every file in scope.
 2. Remove duplicate and outdated entries.

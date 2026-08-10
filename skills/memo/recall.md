@@ -1,6 +1,9 @@
 # recall [topic]
 
-- No `topic`: read `memory.md`'s index table, judge from the current task which topic files
-  (`general.md`, `domain/*.md`, `tools/*.md`, the current project's `MEMORY.md`) are relevant,
-  and read those too.
-- With `topic`: read that file directly (match against the index table or filename).
+Checks both scopes, project first: `~/.claude/memory/projects/{mapped-path}/` (if it exists),
+then `~/.claude/memory/` (global).
+
+- No `topic`: for each scope in order, read that scope's `memory.md` index table, judge from
+  the current task which files (`general.md`, `domain/*.md`) are relevant, and read those.
+- With `topic`: for each scope in order, check its `memory.md` index table / filenames for a
+  match; read the first match found. If both scopes have a matching file, read both.
