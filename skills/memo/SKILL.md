@@ -1,6 +1,6 @@
 ---
 name: memo
-description: Manage the ~/.claude/memory/ system — recall relevant memory, persist new facts, initialize a project's memory scope, or reorganize the memory tree.
+description: Manage the ~/.claude/memory/ system — recall memory for a task, persist a fact (e.g. 'remember X'), init a project's memory scope, or reorganize it.
 argument-hint: "[help|init|reorganize|recall|update]"
 ---
 

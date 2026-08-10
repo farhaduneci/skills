@@ -2,9 +2,9 @@
 
 Project-scoped only — does not touch global files.
 
-1. Compute `{mapped-path}` = current project's absolute path with every `/` replaced by `-`.
-2. If `~/.claude/memory/projects/{mapped-path}/memory.md` already exists, stop.
-3. Otherwise create the project's scope root at `~/.claude/memory/projects/{mapped-path}/`:
+1. If `~/.claude/memory/projects/{mapped-path}/memory.md` already exists (see SKILL.md for
+   how `{mapped-path}` is derived), stop.
+2. Otherwise create the project's scope root at `~/.claude/memory/projects/{mapped-path}/`:
 
 `general.md`:
 ```

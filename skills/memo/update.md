@@ -11,9 +11,9 @@ Route each fact in two steps:
 1. **Scope** — true only for the current project → project scope
    (`~/.claude/memory/projects/{mapped-path}/`). True more broadly → global scope
    (`~/.claude/memory/`).
-2. **File within that scope** — clusters around one nameable subject (a tool, skill, library,
-   service) → that scope's `domain/{topic}.md`, created immediately even for a single entry.
-   Otherwise (diffuse, miscellaneous, doesn't cluster) → that scope's `general.md`.
+2. **File within that scope** — clusters around a nameable subject → that scope's
+   `domain/{topic}.md`, created immediately even for a single entry. Otherwise → that scope's
+   `general.md`.
 
 Create the target file if it doesn't exist, prepend the entry (newest first, see Entry format
 in `SKILL.md`), and update its row in that scope's `memory.md` index (creating the row if new).
